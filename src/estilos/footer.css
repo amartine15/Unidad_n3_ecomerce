@@ -1,0 +1,35 @@
+.footer{
+    background-color: rgba(35, 1, 58, 0.548);
+    height: 4cm;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer p strong{
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        background-color: rgb(255, 115, 0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer p{
+        font-size: 14px;
+    } 
+}
+
+@media screen and (max-width: 370px) {
+    .footer p{
+        font-size: 11px;
+    } 
+}

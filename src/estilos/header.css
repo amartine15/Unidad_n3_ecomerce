@@ -1,0 +1,100 @@
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 3cm;
+    background-color: rgba(35, 1, 58, 0.548);
+}
+
+.header .imagen-header{
+    display: grid;
+    grid-template-columns: auto;
+    height: 3cm;
+    justify-content: start;
+    align-content: center;
+    margin-left: 1cm;
+}
+
+.header .imagen-header img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 20px 20px;
+    border: solid purple;
+    box-shadow: .5px .5px .5px 1px;
+}
+
+.header .nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 40%;
+    margin: 0 auto;
+    gap: 1cm;
+    justify-content: center;
+    align-content: center;
+}
+
+.header .nav a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 250, 250);
+}
+
+.header .nav a:hover{
+    color: black;
+    transition: 2s all;
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        background-color: rgb(255, 115, 0);
+        height: 5cm;
+        display: block;
+    }
+
+    .header .imagen-header{
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .header .nav{
+        display: block;
+        width: 90%;
+    }
+
+    .header .nav a{
+        display: inline;
+        margin-left: 1cm;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header .nav a{
+        margin-left: 0.5cm;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    
+    .header{
+        height: 6.5cm;
+    }
+    .header .nav {
+        text-align: center;
+    }
+    .header .nav a{
+        display: block;
+        margin: 5px auto;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+  .header .imagen-header img{
+    height: 60px;
+    width: 60px;
+    margin-top: 1cm;
+  }  
+  
+}
